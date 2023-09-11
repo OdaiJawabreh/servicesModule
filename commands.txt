@@ -1,0 +1,6 @@
+npx sequelize-cli model:generate --name Users --attributes username:string,name:string,phone:string,age:integer
+
+npx sequelize-cli seed:generate --name Users
+npx sequelize-cli db:seed:all
+
+npx sequelize-cli db:seed --seed seeders/20220216092617-Users.js
